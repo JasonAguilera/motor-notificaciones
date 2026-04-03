@@ -15,24 +15,25 @@ Fuentes de Eventos → Kafka/Redis → Flink (Procesamiento) → API Gateway →
 Cada módulo puede desplegarse, escalarse y actualizarse de forma independiente, permitiendo que el equipo de producto experimente con nuevas ideas sin afectar la estabilidad del core.
 
 # Requisitos y Configuración del Entorno Técnico
-Herramienta                  Versión                     Rol en el proyecto
-Git                          ≥ 2.40                      Control de versiones del código fuente
+Herramienta------------------Versión---------------------Rol en el proyecto
 
-Docker + Docker Compose      Docker ≥ 24, Compose v2     Contenedorización de todos los servicios
+Git--------------------------≥ 2.40----------------------Control de versiones del código fuente
 
-Python                       3.11+                       Workers de procesamiento y APIs
+Docker + Docker Compose------Docker ≥ 24, Compose v2-----Contenedorización de todos los servicios
 
-Apache Kafka                 3.7 (via Docker)            Bus de eventos principal
+Python-----------------------3.11+-----------------------Workers de procesamiento y APIs
 
-Redis                        7.x (via Docker)            Streams para notificaciones de baja latencia
+Apache Kafka-----------------3.7 (via Docker)------------Bus de eventos principal
 
-Apache Flink                 1.18 (via Docker)           Motor de procesamiento de streams
+Redis------------------------7.x (via Docker)------------Streams para notificaciones de baja latencia
 
-PostgreSQL                   15 (via Docker)             Almacenamiento de notificaciones y preferencias
+Apache Flink-----------------1.18 (via Docker)-----------Motor de procesamiento de streams
 
-FastAPI                      0.111+                      Framework para APIs REST y WebSockets
+PostgreSQL-------------------15 (via Docker)-------------Almacenamiento de notificaciones y preferencias
 
-Grafana                      10.x (via Docker)           Dashboard de métricas de engagement
+FastAPI----------------------0.111+----------------------Framework para APIs REST y WebSockets
+
+Grafana----------------------10.x (via Docker)-----------Dashboard de métricas de engagement
 
 # Instrucciones de Instalación
 

@@ -8,9 +8,8 @@ Pipeline Híbrido Modular
 El sistema se organiza en módulos independientes conectados por un bus de eventos:
 
 Fuentes de Eventos → Kafka/Redis → Flink (Procesamiento) → API Gateway → Clientes
-                                        ↕
 
-                                    PostgreSQL
+                                ↕PostgreSQL
 
 Cada módulo puede desplegarse, escalarse y actualizarse de forma independiente, permitiendo que el equipo de producto experimente con nuevas ideas sin afectar la estabilidad del core.
 
